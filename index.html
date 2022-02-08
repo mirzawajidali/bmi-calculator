@@ -114,10 +114,10 @@
               var weight = $("#weight").val();
               var unit   = $("#unit").val();
               if(height===''){
-                  $('#error').html("<div class='alert alert-danger text-center'>Please Fill the information to get Your BMI.</div>");
+                $('#error').html("<div class='alert alert-danger alert-dismissible fade show text-center' role='alert'><strong>Alert!</strong> Please fill the information to get your BMI.<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
                   $("#bmi_calculator")[0].reset();
               }else if(weight===''){
-                  $('#error').html("<div class='alert alert-danger text-center'>Please Fill the information to get Your BMI.</div>");
+                  $('#error').html("<div class='alert alert-danger alert-dismissible fade show text-center' role='alert'><strong>Alert!</strong> Please fill the information to get your BMI.<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
                   $("#bmi_calculator")[0].reset();
               }else{
                 height = parseFloat(height);
